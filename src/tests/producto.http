@@ -1,0 +1,35 @@
+GET http://localhost:3005/
+###
+GET http://localhost:3005/producto
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJKdWFuIFBlcmV6IiwidXN1YXJpbyI6ImpwZXJleiIsImlhdCI6MTc2MzIyMTkzOCwiZXhwIjoxNzYzODI2NzM4fQ.ui3NNr76JEkrG9FTpbzmahAmtuEAFYvKCy4T82pNHmo
+
+###
+GET http://localhost:3005/producto/5
+###
+POST http://localhost:3005/producto
+Content-Type: application/json
+
+{
+    "titulo": "Playstation 4",
+    "descripcion": "Consola de videojuegos",
+    "precio": 1000,
+    "categoria": "Consolas",
+    "img": "https://plazavea.vteximg.com.br/arquivos/ids/29033795-1000-1000/20404194.jpg"
+  }
+
+###
+
+PUT http://localhost:3005/producto
+Content-Type: application/json
+
+{
+    "id": 5,
+    "titulo": "Playstation 4 Pro Edition",
+    "descripcion": "Consola de videojuegos",
+    "precio": 1500,
+    "categoria": "Consolas",
+    "img": "https://plazavea.vteximg.com.br/arquivos/ids/29033795-1000-1000/20404194.jpg"
+}
+
+###
+DELETE http://localhost:3005/producto/5

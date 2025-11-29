@@ -1,0 +1,17 @@
+POST http://localhost:3005/auth/registrar
+Content-Type: application/json
+
+{
+    "nombre": "Rodrigo Gomez",
+    "usuario": "rgomez",
+    "password": "password123",
+    "rol": "Admin"
+}
+###
+POST http://localhost:3005/auth/login
+Content-Type: application/json
+
+{
+    "usuario": "jperez",
+    "password": "admin123"
+}

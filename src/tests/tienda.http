@@ -1,0 +1,27 @@
+GET http://localhost:3005/
+###
+GET http://localhost:3005/tienda
+###
+GET http://localhost:3005/tienda/3
+###
+POST http://localhost:3005/tienda
+Content-Type: application/json
+
+{
+    "nombre": "Bazar Xiomara",
+    "direccion": "Polvos Azulre Int. 423"
+  }
+
+###
+
+PUT http://localhost:3005/tienda
+Content-Type: application/json
+
+{
+    "id": 4,
+    "nombre": "Bazar Xiomara!",
+    "direccion": "Polvos Azulre Int. 423"
+  }
+
+###
+DELETE http://localhost:3005/producto/5
